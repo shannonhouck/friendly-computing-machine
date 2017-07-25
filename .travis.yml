@@ -1,0 +1,28 @@
+# based on dgasmith yml file
+
+sudo: false
+
+matrix:
+  include:
+    - python: 2.7
+    - python: 3.5
+    - python: 3.6
+
+before_install:
+  - uname -a
+  - free -m
+  - df -h
+  - ulimit -a
+  - python -V
+  - pip intall --upgrade pip setuptools
+  - pip install pytest pytest-cov
+  - pip install numpy
+  - pip install codecov
+  - pip install -e .
+
+script:
+  - py.test -v
+
+after_success:
+  - codecov
+  

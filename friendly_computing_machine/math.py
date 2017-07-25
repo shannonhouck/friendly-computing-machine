@@ -26,4 +26,11 @@ def mult(a, b):
     """
     return a*b
 
-
+# Write a function that finds a^b
+def pow(a, b):
+    if(type(b) != int):
+      print("ERROR: pow() not callable with doubles!")
+    if(b == 0):
+      return 1
+    else:
+      return a * pow(a, b-1)
