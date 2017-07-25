@@ -35,6 +35,6 @@ testdata  = [
     (1, 4, 0.25),
 ]
 @pytest.mark.parametrize("a,b,expected", testdata)
-def test_pow(a, b, expected):
+def test_div(a, b, expected):
     assert fcm.math.div(a, b) == expected
 
