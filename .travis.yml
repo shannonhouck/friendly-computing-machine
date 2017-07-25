@@ -15,7 +15,7 @@ before_install:
   - df -h
   - ulimit -a
   - python -V
-  - pip intall --upgrade pip setuptools
+  - pip install --upgrade pip setuptools
   - pip install pytest pytest-cov
   - pip install numpy
   - pip install codecov
