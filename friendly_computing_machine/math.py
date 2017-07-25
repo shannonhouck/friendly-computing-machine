@@ -30,6 +30,7 @@ def mult(a, b):
 def pow(a, b):
     if(type(b) != int):
       print("ERROR: pow() not callable with doubles!")
+      return 0
     if(b == 0):
       return 1
     else:

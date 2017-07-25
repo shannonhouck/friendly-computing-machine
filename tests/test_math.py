@@ -24,3 +24,5 @@ def test_mult(a, b, expected):
 def test_pow():
     assert fcm.math.pow(10, 3) == 1000
     assert fcm.math.pow(2, 4) == 16
+    assert fcm.math.pow(2, 0.5) == 0
+
