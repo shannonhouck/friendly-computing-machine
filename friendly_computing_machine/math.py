@@ -28,7 +28,7 @@ def mult(a, b):
 
 # Write a function that finds a/b
 def div(a, b):
-    return a/b
+    return float(a)/float(b)
 
 # Write a function that finds a^b
 def pow(a, b):
