@@ -1,4 +1,5 @@
 # based on dgasmith yml file
+language: python
 
 sudo: false
 
