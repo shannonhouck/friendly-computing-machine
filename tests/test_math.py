@@ -21,8 +21,20 @@ testdata  = [
 def test_mult(a, b, expected):
     assert fcm.math.mult(a, b) == expected
 
-def test_pow():
-    assert fcm.math.pow(10, 3) == 1000
-    assert fcm.math.pow(2, 4) == 16
-    assert fcm.math.pow(2, 0.5) == 0
+testdata  = [ 
+    (10, 3, 1000),
+    (2, 4, 16), 
+    (2, 0.5, 0), 
+]
+@pytest.mark.parametrize("a,b,expected", testdata)
+def test_pow(a, b, expected):
+    assert fcm.math.pow(a, b) == expected
+
+testdata  = [ 
+    (10, 2, 5),
+    (1, 4, 0.25),
+]
+@pytest.mark.parametrize("a,b,expected", testdata)
+def test_pow(a, b, expected):
+    assert fcm.math.div(a, b) == expected
 
