@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/shannonhouck/friendly-computing-machine/branch/master/graph/badge.svg)](https://codecov.io/gh/shannonhouck/friendly-computing-machine)
+
 # friendly-computing-machine
 
 ### Install instructions
